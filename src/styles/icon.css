@@ -1,0 +1,36 @@
+.external-links {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+.external-links li {
+  display: inline;
+  margin-right: 2rem;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  fill: #cfcfcd;
+}
+
+path {
+  transition: fill .3s ease;
+}
+
+.icon--linkedin:hover {
+  fill: #0077B5;
+}
+
+.icon--github:hover {
+  fill: #181717;
+}
+
+.icon--instagram:hover {
+  fill: #E4405F;
+}
+
+.icon--twitter:hover {
+  fill: #1DA1F2;
+}

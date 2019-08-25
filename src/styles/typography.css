@@ -1,0 +1,100 @@
+html, body {
+  font-size: 10px;
+  color: #d7dedc;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-family: Ovo;
+  color: #9a879d;
+  font-size: 6.103515625em;
+  line-height: 6rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0em;
+  
+}
+
+h1 em {
+  display: block;
+  font-family: inherit;
+  font-size: 0.4em;
+  line-height: inherit;
+  font-weight: 300;
+  letter-spacing: 0em;
+  font-style: italic;
+  color: #cfcfcd;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  font-family: Ovo;
+  color: #9a879d;
+  font-size: 4.8828125em;
+  line-height: 6rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0em;
+}
+
+h3 {
+  margin-bottom: 2rem;
+  font-family: Ovo;
+  color: #9a879d;
+  font-size: 3.90625em;
+  line-height: 6rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0em;
+}
+
+p {
+  margin-bottom: 2rem;
+  font-family: Muli;
+  font-size: 1.6em;
+  line-height: 3rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0em;
+}
+
+a {
+  color: #e8c547;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link--unstyled
+.link--unstyled,
+.link--unstyled:visited,
+.link--unstyled:hover,
+.link--unstyled:active,
+.link--unstyled:focus,
+.link--unstyled:active:hover {
+  font-style: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-size: inherit;
+  text-decoration: none;
+  font-variant: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  font-family: inherit;
+  border-radius: inherit;
+  border: inherit;
+  outline: inherit;
+  box-shadow: inherit;
+  padding: inherit;
+  vertical-align: inherit;
+}
+
+@media (min-width: 576px) {
+  h1 {
+    line-height: 9rem;
+  }
+
+  h1 em {
+    display: inline;
+    font-size: 0.45em;
+  }
+}

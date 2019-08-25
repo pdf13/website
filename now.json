@@ -1,7 +1,4 @@
 {
 	"version": 2,
-	"name": "website",
-	"builds": [
-		{ "src": "index.html", "use": "@now/html-minifier" }
-	]
+	"name": "website"
 }
