@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/pdf13/website/issues"
   },
-  "homepage": "https://github.com/pdf13/website#readme"
+  "homepage": "https://github.com/pdf13/website#readme",
+  "dependencies": {
+    "accept-language-negotiator": "^1.2.0"
+  }
 }

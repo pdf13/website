@@ -1,4 +1,12 @@
 {
 	"version": 2,
-	"name": "website"
+	"github": {
+		"enabled": true
+	},
+	"routes": [
+		{ "src": "/(?!(en|pt-br)/?)(.*)", "dest": "/api/i18n" },
+		{ "src": "/en(/)?", "dest": "/index.en.html" },
+		{ "src": "/pt-br(/)?", "dest": "/index.html"  },
+		{ "src": "(en|pt-br)/(styles|img)/(.*)", "dest": "/$2/$3"  }
+	]
 }

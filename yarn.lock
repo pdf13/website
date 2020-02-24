@@ -2,3 +2,7 @@
 # yarn lockfile v1
 
 
+accept-language-negotiator@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/accept-language-negotiator/-/accept-language-negotiator-1.2.0.tgz#42c3732d9fbe194136778af3040e6fedc45fea05"
+  integrity sha512-f6LrLgHk8d/F94d/j2b7KwaWNAFqfEl0ftsf2ZGxEih2xyy864ainNhKEMP1EdZRQYwgLjwZonrda3v8jnNgHA==
