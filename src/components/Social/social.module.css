@@ -15,7 +15,7 @@
   fill: #cfcfcd;
 }
 
-path {
+.path {
   transition: fill .3s ease;
 }
 

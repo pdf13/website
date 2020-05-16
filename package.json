@@ -3,8 +3,15 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=10"
+  },
   "scripts": {
-    "build": "./build.sh",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "lint": "standard",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +25,16 @@
   },
   "homepage": "https://github.com/pdf13/website#readme",
   "dependencies": {
-    "accept-language-negotiator": "^1.2.0"
+    "@mdx-js/loader": "1.5.1",
+    "@next/mdx": "9.1.1",
+    "accept-language-negotiator": "1.2.0",
+    "next": "9.4.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-ga": "2.7.0"
+  },
+  "devDependencies": {
+    "sass": "1.26.5",
+    "standard": "^14.3.4"
   }
 }
