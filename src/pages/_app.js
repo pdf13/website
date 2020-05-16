@@ -8,6 +8,8 @@ import ReactGA from 'react-ga'
 import Router from 'next/router'
 import Head from 'next/head'
 
+import Favicon from '../components/Favicon'
+
 const App = ({ Component, pageProps }) => {
   useEffect(() => {
     ReactGA.initialize('UA-165873106-1')
@@ -19,9 +21,10 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
       <Head>
-        <title key='title'>pdf</title>
+        <title key='title'>pdf - Software Engineer</title>
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
       </Head>
+      <Favicon />
       <Component {...pageProps} />
     </>
   )
