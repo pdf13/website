@@ -6,11 +6,11 @@ const LanguageSwap = props => {
 
   const available = {
     enUS: {
-      path: '/en-us',
+      path: '/en',
       label: 'read in english'
     },
     ptBR: {
-      path: '/pt-br',
+      path: '/pt',
       label: 'leia em português'
     }
   }
