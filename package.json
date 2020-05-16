@@ -29,6 +29,7 @@
     "@next/mdx": "9.1.1",
     "accept-language-negotiator": "1.2.0",
     "next": "9.4.0",
+    "next-seo": "^4.4.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-ga": "2.7.0"
