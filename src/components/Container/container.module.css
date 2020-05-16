@@ -1,18 +1,3 @@
-/* Custom CSS */
-html {
-  height: 100%;
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  background-color: #3c414e;
-  min-height: 100%;
-}
-
 .container {
   width: 100%; 
   margin-left: auto;

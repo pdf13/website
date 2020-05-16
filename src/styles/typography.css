@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;600&family=Ovo&display=swap');
+
 html, body {
   font-size: 10px;
   color: #d7dedc;
@@ -62,6 +64,7 @@ a {
   color: #e8c547;
   text-decoration: none;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .link--unstyled
