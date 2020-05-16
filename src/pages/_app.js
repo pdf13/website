@@ -7,8 +7,10 @@ import React, { useEffect } from 'react'
 import ReactGA from 'react-ga'
 import Router from 'next/router'
 import Head from 'next/head'
+import { DefaultSeo } from 'next-seo'
 
 import Favicon from '../components/Favicon'
+import SEOConfig from '../seo.config'
 
 const App = ({ Component, pageProps }) => {
   useEffect(() => {
@@ -20,10 +22,8 @@ const App = ({ Component, pageProps }) => {
 
   return (
     <>
-      <Head>
-        <title key='title'>pdf - Software Engineer</title>
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-      </Head>
+      <DefaultSeo {...SEOConfig} />
+      <Head><meta name='viewport' content='initial-scale=1.0, width=device-width' /></Head>
       <Favicon />
       <Component {...pageProps} />
     </>
