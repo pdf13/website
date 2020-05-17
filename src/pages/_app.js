@@ -34,4 +34,16 @@ const App = ({ Component, pageProps }) => {
   )
 }
 
+export function reportWebVitals (metric) {
+  const { id, name, label, value } = metric
+
+  ReactGA.event({
+    eventCategory: `Next.js ${label} metric`,
+    eventAction: name,
+    eventValue: Math.round(name === 'CLS' ? value * 1000 : value),
+    eventLabel: id,
+    nonInteraction: true
+  })
+}
+
 export default App
