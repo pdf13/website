@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 
-import '../styles/reset.css'
-import '../styles/normalize.css'
-import '../styles/base.css'
-import '../styles/typography.css'
+import 'styles/reset.css'
+import 'styles/normalize.css'
+import 'styles/base.css'
+import 'styles/typography.css'
 
 import React, { useEffect } from 'react'
 import ReactGA from 'react-ga'
@@ -11,8 +11,8 @@ import Router from 'next/router'
 import Head from 'next/head'
 import { DefaultSeo } from 'next-seo'
 
-import Favicon from '../components/Favicon'
-import SEOConfig from '../seo.config'
+import Favicon from 'components/Favicon'
+import SEOConfig from 'seo.config'
 
 const App = ({ Component, pageProps }) => {
   useEffect(() => {
