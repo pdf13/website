@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { string } from 'prop-types'
 
 const LanguageSwap = props => {
   const { to } = props
@@ -24,6 +25,10 @@ const LanguageSwap = props => {
       </Link>
     </p>
   )
+}
+
+LanguageSwap.propTypes = {
+  to: string.isRequired
 }
 
 export default LanguageSwap
