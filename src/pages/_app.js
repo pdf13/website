@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+
 import '../styles/reset.css'
 import '../styles/normalize.css'
 import '../styles/base.css'

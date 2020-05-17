@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './social.module.css'
 
 export const icons = (
