@@ -11,7 +11,7 @@
     "build": "next build",
     "start": "next start",
     "export": "next export",
-    "lint": "standard",
+    "lint": "eslint --cache ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,14 +29,23 @@
     "@next/mdx": "9.1.1",
     "accept-language-negotiator": "1.2.0",
     "next": "9.4.0",
-    "next-seo": "^4.4.0",
-    "prop-types": "^15.7.2",
+    "next-seo": "4.4.0",
+    "prop-types": "15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-ga": "2.7.0"
   },
   "devDependencies": {
+    "eslint": "7.0.0",
+    "eslint-config-standard": "14.1.1",
+    "eslint-plugin-import": "2.20.2",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-react": "7.20.0",
+    "eslint-plugin-standard": "4.0.1",
+    "husky": ">=4",
+    "lint-staged": ">=10",
     "sass": "1.26.5",
-    "standard": "^14.3.4"
+    "standard": "14.3.4"
   }
 }
