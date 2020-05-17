@@ -16,7 +16,7 @@ import SEOConfig from '../seo.config'
 
 const App = ({ Component, pageProps }) => {
   useEffect(() => {
-    ReactGA.initialize('UA-165873106-1')
+    ReactGA.initialize(process.env.NEXT_PUBLIC_GA_TRACKING_ID)
     ReactGA.pageview(`${window.location.pathname}${window.location.search}`)
 
     Router.events.on('routeChangeComplete', url => ReactGA.pageview(url))
