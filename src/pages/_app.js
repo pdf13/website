@@ -23,7 +23,9 @@ const App = ({ Component, pageProps }) => {
   return (
     <>
       <DefaultSeo {...SEOConfig} />
-      <Head><meta name='viewport' content='initial-scale=1.0, width=device-width' /></Head>
+      <Head>
+        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      </Head>
       <Favicon />
       <Component {...pageProps} />
     </>
