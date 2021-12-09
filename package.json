@@ -28,7 +28,7 @@
     "@mdx-js/loader": "1.5.1",
     "@next/mdx": "9.1.1",
     "accept-language-negotiator": "1.2.0",
-    "next": "9.4.0",
+    "next": "11.1.3",
     "next-seo": "4.4.0",
     "prop-types": "15.7.2",
     "react": "16.13.1",
