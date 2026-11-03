@@ -50,7 +50,13 @@ export default async function Page ({ params }: { params: Promise<{ lang: string
         </nav>
       </aside>
       <main className='content'>
-        <p className='lede'>{t.lede}</p>
+        <p className='lede'>
+          <span>pdƒ(</span>
+          {t.params.map((param, index) => (
+            <span key={param} className='param'>{param}{index < t.params.length - 1 && ', '}</span>
+          ))}
+          <span>)</span>
+        </p>
         <article className='prose'>
           <Content years={yearsOfExperience()} />
         </article>
