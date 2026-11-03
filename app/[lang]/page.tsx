@@ -54,7 +54,7 @@ export default async function Page ({ params }: { params: Promise<{ lang: string
           <span>pdƒ(</span>
           <span className='params'>
             {t.params.map((param, index) => (
-              <span key={param}>{param}{index < t.params.length - 1 ? ', ' : ')'}</span>
+              <span key={param}>{param}{index < t.params.length - 1 ? ', ' : ');'}</span>
             ))}
           </span>
         </p>
