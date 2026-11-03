@@ -58,9 +58,11 @@ html:not([data-mode]) .theme-toggle { display: none; }
   font-variation-settings: "opsz" 48;
   line-height: 1.1;
   letter-spacing: -0.015em;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
 }
-.lede span { display: block; }
-.lede .param { padding-inline-start: 1em; }
+.params { min-width: 0; }
+.params span { display: block; }
 
 .prose { font-family: var(--font-body); font-size: 1.0625rem; line-height: 1.68; }
 .prose p { max-width: none; }

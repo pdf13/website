@@ -52,10 +52,11 @@ export default async function Page ({ params }: { params: Promise<{ lang: string
       <main className='content'>
         <p className='lede'>
           <span>pdƒ(</span>
-          {t.params.map((param, index) => (
-            <span key={param} className='param'>{param}{index < t.params.length - 1 && ', '}</span>
-          ))}
-          <span>)</span>
+          <span className='params'>
+            {t.params.map((param, index) => (
+              <span key={param}>{param}{index < t.params.length - 1 ? ', ' : ')'}</span>
+            ))}
+          </span>
         </p>
         <article className='prose'>
           <Content years={yearsOfExperience()} />
