@@ -55,8 +55,8 @@ html:not([data-mode]) .theme-toggle { display: none; }
   margin-bottom: var(--sidebar-gap);
   font-family: var(--font-display);
   font-size: clamp(2.25rem, 4.2vw, 3.625rem);
-  font-weight: 400;
-  font-variation-settings: "opsz" 36;
+  font-weight: 340;
+  font-variation-settings: "opsz" 48;
   line-height: 1.1;
   letter-spacing: -0.015em;
   text-wrap: balance;
