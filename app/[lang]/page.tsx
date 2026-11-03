@@ -23,8 +23,11 @@ export default async function Page ({ params }: { params: Promise<{ lang: string
     image: `${siteUrl}/img/avatar.jpg`,
     jobTitle: t.jobTitle,
     worksFor: { '@type': 'Organization', name: 'Nubank', url: 'https://nubank.com.br' },
-    knowsAbout: ['Clojure', 'Datomic', 'Kafka', 'AWS', 'Pix', 'Bre-B', 'Instant payments'],
-    alumniOf: { '@type': 'CollegeOrUniversity', name: 'Universidade Federal de Minas Gerais' },
+    knowsAbout: ['Clojure', 'Datomic', 'Kafka', 'AWS', 'Pix', 'Bre-B', 'Instant payments', 'Cybersecurity'],
+    alumniOf: [
+      { '@type': 'CollegeOrUniversity', name: 'Universidade Federal de Minas Gerais' },
+      { '@type': 'CollegeOrUniversity', name: 'PUC Minas' }
+    ],
     address: { '@type': 'PostalAddress', addressLocality: 'São Paulo', addressRegion: 'SP', addressCountry: 'BR' },
     sameAs: socialUrls
   }
