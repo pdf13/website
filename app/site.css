@@ -1,0 +1,80 @@
+/* Hallmark · shape: Long Document (swapped from draw 63dc85's Index-First, which needs list content the page does not have) · genre: editorial · theme: brand · redesign: full · copy: verbatim · modes: light+dark
+ * paper: oklch(95.9% 0.012 88.7) · accent: oklch(49.3% 0.098 86.4) · display: Ovo · body: Mulish · hero: Corridor, left-aligned on the prose column · nav: edge-aligned · footer: colophon · signature: the .pdf logo, drawn from 1, 0, 0, 1 and ƒ
+ * axes: light/roman-serif/warm · posture: Restrained · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P5 H4 E4 S5 R4 V4 · weakest: H, a text page has a quiet first screen; the logo is set large to carry it */
+/* Hallmark · waive 80 · the logo is custom lettering the owner designed and asked to lead with, not a decorative illustration */
+/* Hallmark · dropped https://twitter.com/_pdf · the owner retired the account from the site */
+@import url("./tokens.css");
+@import url("./base.css");
+
+:root { --column: 42rem; --display-weight: 400; }
+
+body { display: flex; flex-direction: column; min-height: 100dvh; }
+
+.column {
+  width: 100%;
+  max-width: calc(var(--column) + 2 * var(--space-lg));
+  margin-inline: auto;
+  padding-inline: var(--space-lg);
+}
+
+a { color: var(--color-accent); font-weight: 600; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  min-height: 72px;
+}
+.home { display: block; margin-left: -10px; }
+.home svg { width: 40px; height: 40px; }
+.nav-actions { display: flex; align-items: center; gap: var(--space-lg); font-size: var(--text-sm); }
+
+.text-button {
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--color-accent);
+  font-weight: 600;
+  cursor: pointer;
+}
+.text-button:hover { text-decoration: underline; }
+.text-button:active { opacity: 0.7; }
+.when-dark { display: none; }
+[data-mode="dark"] .when-dark { display: inline; }
+[data-mode="dark"] .when-light { display: none; }
+html:not([data-mode]) .theme-toggle { display: none; }
+
+.hero { padding-block: var(--space-lg) var(--space-3xl); }
+.hero-logo { width: min(100%, 25rem); height: auto; margin-bottom: var(--space-xl); }
+.hero h1 {
+  max-width: none;
+  margin-bottom: var(--space-md);
+  color: var(--color-heading);
+  font-size: clamp(1.75rem, 2vw + 1.1rem, 2.5rem);
+  letter-spacing: 0;
+}
+.hero .lead { margin-bottom: var(--space-lg); }
+
+.social { display: flex; gap: var(--space-sm); margin: 0 0 0 calc(-1 * var(--space-sm)); padding: 0; list-style: none; }
+.social a { display: grid; place-items: center; width: 48px; height: 48px; color: var(--color-ink-2); }
+.social a:hover { color: var(--color-accent); }
+.social a:active { opacity: 0.7; }
+.social svg { width: 24px; height: 24px; fill: currentColor; }
+
+.prose { padding-bottom: var(--section-gap-s); font-size: 1.125rem; line-height: 1.75; }
+.prose p + p { margin-top: var(--space-lg); }
+
+.site-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  margin-top: auto;
+  padding-block: var(--space-xl);
+}
+.footer-logo { width: 88px; height: auto; }
+.site-footer .social { margin: 0 calc(-1 * var(--space-sm)) 0 0; }

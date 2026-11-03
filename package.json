@@ -1,18 +1,17 @@
 {
   "name": "website",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.0",
+  "private": true,
+  "description": "pdf.engineer, the personal site of Pedro Dias Fonseca",
   "engines": {
-    "node": ">=10"
+    "node": ">=20.9"
   },
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next export",
-    "lint": "eslint --cache ./",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -20,32 +19,24 @@
   },
   "author": "pdf",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pdf13/website/issues"
-  },
-  "homepage": "https://github.com/pdf13/website#readme",
   "dependencies": {
-    "@mdx-js/loader": "1.5.1",
-    "@next/mdx": "9.1.1",
-    "accept-language-negotiator": "1.2.0",
-    "next": "9.4.0",
-    "next-seo": "4.4.0",
-    "prop-types": "15.7.2",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-ga": "2.7.0"
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "^16.4.4",
+    "next": "^16.4.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
-    "eslint": "7.0.0",
-    "eslint-config-standard": "14.1.1",
-    "eslint-plugin-import": "2.20.2",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-react": "7.20.0",
-    "eslint-plugin-standard": "4.0.1",
-    "husky": ">=4",
-    "lint-staged": ">=10",
-    "sass": "1.26.5",
-    "standard": "14.3.4"
+    "@types/mdx": "^2.0.14",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.4.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "neostandard": "^0.14.1",
+    "typescript": "^6.0.3"
   }
 }

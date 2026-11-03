@@ -4,3 +4,7 @@ node_modules/
 .next
 .eslintcache
 .vercel
+.claude/
+.hallmark/
+next-env.d.ts
+*.tsbuildinfo
