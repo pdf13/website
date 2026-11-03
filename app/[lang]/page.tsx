@@ -2,9 +2,11 @@ import Link from 'next/link'
 import Logo from '@/components/Logo'
 import Social, { socialUrls } from '@/components/Social'
 import ThemeToggle from '@/components/ThemeToggle'
-import { dictionary, isLocale, siteUrl } from '@/lib/i18n'
+import { dictionary, isLocale, siteUrl, yearsOfExperience } from '@/lib/i18n'
 import English from '@/content/en.mdx'
 import Portuguese from '@/content/pt.mdx'
+
+export const revalidate = 86400
 
 export default async function Page ({ params }: { params: Promise<{ lang: string }> }) {
   const { lang: raw } = await params
@@ -20,7 +22,8 @@ export default async function Page ({ params }: { params: Promise<{ lang: string
     url: `${siteUrl}/${lang}`,
     image: `${siteUrl}/img/avatar.jpg`,
     jobTitle: t.jobTitle,
-    worksFor: { '@type': 'Organization', name: 'Loggi', url: 'https://www.loggi.com' },
+    worksFor: { '@type': 'Organization', name: 'Nubank', url: 'https://nubank.com.br' },
+    knowsAbout: ['Clojure', 'Datomic', 'Kafka', 'AWS', 'Pix', 'Bre-B', 'Instant payments'],
     alumniOf: { '@type': 'CollegeOrUniversity', name: 'Universidade Federal de Minas Gerais' },
     address: { '@type': 'PostalAddress', addressLocality: 'São Paulo', addressRegion: 'SP', addressCountry: 'BR' },
     sameAs: socialUrls
@@ -46,7 +49,7 @@ export default async function Page ({ params }: { params: Promise<{ lang: string
       <main className='content'>
         <p className='lede'>{t.lede}</p>
         <article className='prose'>
-          <Content />
+          <Content years={yearsOfExperience()} />
         </article>
       </main>
     </div>

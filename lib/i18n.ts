@@ -3,6 +3,10 @@ export type Locale = (typeof locales)[number]
 
 export const siteUrl = 'https://pdf.engineer'
 
+const firstYearWritingCode = 2013
+
+export const yearsOfExperience = () => new Date().getFullYear() - firstYearWritingCode
+
 export const isLocale = (value: string): value is Locale =>
   (locales as readonly string[]).includes(value)
 
@@ -14,10 +18,10 @@ export const dictionary = {
     otherHrefLang: 'pt-BR',
     otherLabel: 'leia em português',
     name: 'pdf (aka. pedro dias fonseca)',
-    lede: 'Writing code since 2013 and currently living in São Paulo - SP, Brazil',
-    description: 'Brief description about who am I, where I live, work, and how to contact me.',
-    ogDescription: 'Information about work and contact',
-    jobTitle: 'Senior Software Engineer',
+    lede: 'pdƒ(code, people, learning)',
+    description: 'Pedro Dias Fonseca (pdf), software engineer at Nubank working on instant payments with Pix and Bre-B. Based in São Paulo, Brazil.',
+    ogDescription: 'Software engineer at Nubank, working on instant payments with Pix and Bre-B.',
+    jobTitle: 'Software Engineer',
     home: 'pdf, home',
     social: 'Elsewhere',
     toDark: 'dark mode',
@@ -30,10 +34,10 @@ export const dictionary = {
     otherHrefLang: 'en',
     otherLabel: 'read in english',
     name: 'pdf (aka. pedro dias fonseca)',
-    lede: 'Escrevo código desde 2013 e atualmente vivo em São Paulo - SP, Brasil.',
-    description: 'Breve descrição sobre quem sou, onde moro, onde trabalho e como entrar em contato comigo.',
-    ogDescription: 'Informações sobre trabalho e contato',
-    jobTitle: 'Engenheiro de Software Sênior',
+    lede: 'pdƒ(código, pessoas, aprendizado)',
+    description: 'Pedro Dias Fonseca (pdf), engenheiro de software no Nubank, trabalhando com pagamentos instantâneos com Pix e Bre-B. Em São Paulo, Brasil.',
+    ogDescription: 'Engenheiro de software no Nubank, trabalhando com pagamentos instantâneos com Pix e Bre-B.',
+    jobTitle: 'Engenheiro de Software',
     home: 'pdf, início',
     social: 'Em outros lugares',
     toDark: 'modo escuro',
