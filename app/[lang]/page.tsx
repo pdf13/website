@@ -1,5 +1,7 @@
+import Link from 'next/link'
 import Logo from '@/components/Logo'
 import Social, { socialUrls } from '@/components/Social'
+import ThemeToggle from '@/components/ThemeToggle'
 import { dictionary, isLocale, siteUrl } from '@/lib/i18n'
 import English from '@/content/en.mdx'
 import Portuguese from '@/content/pt.mdx'
@@ -25,20 +27,28 @@ export default async function Page ({ params }: { params: Promise<{ lang: string
   }
 
   return (
-    <main className='column'>
+    <div className='layout'>
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{ __html: JSON.stringify(person).replace(/</g, '\\u003c') }}
       />
-      <section className='hero'>
-        <Logo className='hero-logo' />
+      <aside className='sidebar'>
+        <Link href={`/${lang}`} className='home' aria-label={t.home}>
+          <Logo className='logo' />
+        </Link>
         <h1>{t.name}</h1>
-        <p className='lead'>{t.lede}</p>
         <Social label={t.social} />
-      </section>
-      <article className='prose'>
-        <Content />
-      </article>
-    </main>
+        <nav className='controls'>
+          <a href={`/${t.other}`} hrefLang={t.otherHrefLang}>{t.otherLabel}</a>
+          <ThemeToggle toDark={t.toDark} toLight={t.toLight} />
+        </nav>
+      </aside>
+      <main className='content'>
+        <p className='lede'>{t.lede}</p>
+        <article className='prose'>
+          <Content />
+        </article>
+      </main>
+    </div>
   )
 }
